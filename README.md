@@ -6,3 +6,6 @@ MAKEXML.py
   - ignores any #fragments in URLs.
   - future todo: ingore URLs with different canonical
   - crawl better than BeautifulSoup
+
+CRUX.py
+  This file lets you quickly run google page speed insights for a list of URLs using the Google API. See instructions in the file.
