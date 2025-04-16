@@ -9,3 +9,6 @@ MAKEXML.py
 
 CRUX.py
   This file lets you quickly run google page speed insights for a list of URLs using the Google API. See instructions in the file.
+
+RUNLOCAL.py
+  I needed a way to locally run my google cloud run functions - but to treat them as if they were an API. I figured this might be useful for others. 
