@@ -12,3 +12,6 @@ CRUX.py
 
 RUNLOCAL.py
   I needed a way to locally run my google cloud run functions - but to treat them as if they were an API. I figured this might be useful for others. 
+
+FANOUT.py
+  Uses Gemini API. Enter a query and it will show you the query fanout and citations.  Useful for a quick check, or as part of an automated routine.
