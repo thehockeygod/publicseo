@@ -15,3 +15,13 @@ RUNLOCAL.py
 
 FANOUT.py
   Uses Gemini API. Enter a query and it will show you the query fanout and citations.  Useful for a quick check, or as part of an automated routine.
+
+
+GPT_BROWSER_VIEW.py
+  Shows the text that OpenAI's gpt-oss browser tool would see on your page. Uses the same HTML-to-text code from their GitHub repo, so you can check what the model actually reads.
+  - Outputs the page in 1024-token "screens," the same way the model reads it
+  - Links show as 【id†text】 and images as [Image N: alt text]. Images with no alt text are just [Image N]
+  - --full prints the whole page in one block, --links lists the link IDs the model can "click"
+  - Fetches your page directly by default. Use --backend exa or --backend youcom (needs an API key) to make the exact API call gpt-oss uses
+  - Doesn't run JavaScript, so content rendered client-side won't show up
+  - pip install aiohttp html2text lxml tiktoken
